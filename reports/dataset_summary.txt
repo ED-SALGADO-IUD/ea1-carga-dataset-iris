@@ -1,0 +1,27 @@
+RESUMEN DEL DATASET
+========================================================================
+Filas: 113
+Columnas: 5
+
+COLUMNAS, TIPOS Y VALORES NULOS
+------------------------------------------------------------------------
+- largo_sepalo_cm: tipo=float64; nulos=0
+- largo_petalo_cm: tipo=float64; nulos=0
+- ancho_petalo_cm: tipo=float64; nulos=0
+- especie: tipo=object; nulos=0
+- area_petalo_cm2: tipo=float64; nulos=0
+
+ESTADÍSTICAS DESCRIPTIVAS
+------------------------------------------------------------------------
+        largo_sepalo_cm  largo_petalo_cm  ancho_petalo_cm     especie  area_petalo_cm2
+count        113.000000       113.000000       113.000000         113       113.000000
+unique              NaN              NaN              NaN           3              NaN
+top                 NaN              NaN              NaN  versicolor              NaN
+freq                NaN              NaN              NaN          50              NaN
+mean           6.124779         4.534513         1.518584         NaN         7.588938
+std            0.737095         1.294133         0.594851         NaN         4.044847
+min            4.700000         1.600000         0.200000         NaN         0.320000
+25%            5.600000         4.000000         1.300000         NaN         5.200000
+50%            6.100000         4.700000         1.500000         NaN         7.200000
+75%            6.600000         5.400000         2.000000         NaN        10.440000
+max            7.900000         6.900000         2.500000         NaN        15.870000
