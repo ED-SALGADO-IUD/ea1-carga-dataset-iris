@@ -20,18 +20,27 @@ pip install -r requirements.txt
 jupyter notebook EA1_Carga_y_Transformacion_Iris.ipynb
 ```
 
-Ejecuta las celdas en orden desde la carpeta raíz del proyecto. El cargador intenta Hugging Face primero. Si no hay conexión, usa `data/iris.csv` como respaldo para que la evidencia pueda reproducirse.
 
 Dataset solicitado: [`scikit-learn/iris`](https://huggingface.co/datasets/scikit-learn/iris), split `train`.
 
-## Publicar en GitHub
+## Publicar en GitHub y registrar avances
 
-Crea un repositorio vacío en GitHub. Desde esta carpeta ejecuta:
+Repositorio del proyecto: <https://github.com/ED-SALGADO-IUD/ea1-carga-dataset-iris>
+
+Para actualizarlo con los archivos de esta carpeta, usa la copia local del repositorio y registra los cambios:
 
 ```bash
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-git branch -M main
-git push -u origin main
+git add .gitignore requirements.txt data src
+git commit -m "Add Hugging Face loader and dataset summarizer"
+git add EA1_Carga_y_Transformacion_Iris.ipynb reports README.md
+git commit -m "Add Iris transformations and generated summary"
+git push origin main
 ```
 
-Si el repositorio es privado, agrega al docente como colaborador. Entrega en la plataforma la URL del repositorio y confirma el envío.
+Si el repositorio aún no está clonado, puedes descargarlo con:
+
+```bash
+git clone https://github.com/ED-SALGADO-IUD/ea1-carga-dataset-iris.git
+```
+
+Si el repositorio es privado, concede acceso al docente.

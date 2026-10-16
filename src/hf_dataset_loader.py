@@ -55,7 +55,7 @@ class HFDatasetLoader:
                     f"No existe el CSV local: {self.offline_fallback_path}"
                 ) from hf_error
             self.last_source = (
-                f"CSV local de respaldo: {self.offline_fallback_path} "
+                f"CSV local de respaldo: {self.offline_fallback_path.name} "
                 f"(Hugging Face no estuvo disponible: {type(hf_error).__name__})"
             )
             return pd.read_csv(self.offline_fallback_path)
